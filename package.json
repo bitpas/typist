@@ -1,0 +1,25 @@
+{
+  "name": "typist",
+  "version": "0.1.0",
+  "description": "Animated typing utility",
+  "main": "dist/typist.js",
+  "scripts": {
+    "rollup": "rollup --config",
+    "build": "npm run rollup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryantoddgarza/typist.git"
+  },
+  "author": "Ryan Todd Garza <ryantoddgarza@gmail.com> (http://ryantoddgarza.com)",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/ryantoddgarza/typist/issues"
+  },
+  "homepage": "https://github.com/ryantoddgarza/typist#readme",
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "prettier": "^2.2.1",
+    "rollup": "^2.37.1"
+  }
+}
