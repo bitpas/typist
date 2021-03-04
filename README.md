@@ -48,56 +48,59 @@ myTypist
   .start();
 ```
 
-## Specs
+## API
 
-### Instance method
+### `new Typist(callback, [options])`
 
-- Method: `new Typist(function, object)`
 - Arguments
-  - function: Callback to which the output from Typist is passed as an argument
-  - object: Options
+  - callback: `function` - Callback to which the output from Typist is passed as an argument
+  - options: `object` - Optional configuration settings
 - Returns: Typist
-
-#### Options
-
-- `speed`: number in milliseconds
 
 ### Non-chainable instance methods
 
-#### `start`
+#### `Typist.start()`
 
-- Method: `start()`
 - Arguments: none
 - Returns: undefined
 
-#### `stop`
+#### `Typist.stop()`
 
-- Method: `stop()`
 - Arguments: none
 - Returns: undefined
 
 ### Chainable instance methods
 
-#### `type`
+#### `Typist.type(string)`
 
-- Method: `type(string)`
 - Arguments
-  - string: Output to callback
+  - string `string`: Output to callback
 - Returns: Typist instance object
 
-#### `backspace`
+#### `Typist.backspace(value)`
 
-- Method: `backspace(value)`
 - Arguments
-  - value: Number or String
-    - Default: `1`
+  - value `number` or `string`:
     - `n`: Delete _n_ number of characters
     - `'all'`: Delete output length
+    - Default: `1`
 - Returns: Typist instance object
 
-#### `pause`
+#### `Typist.pause(value)`
 
-- Method: `pause(number)`
 - Arguments
-  - number: time in milliseconds
+  - value `number`: time in milliseconds
 - Returns: Typist instance object
+
+### Options
+
+```js
+// default options
+const defaults = {
+  speed: 120,
+};
+```
+
+#### speed `number`
+
+- Speed of the animation in milliseconds
