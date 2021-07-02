@@ -1,25 +1,34 @@
 {
-  "name": "typist",
-  "version": "0.1.1",
+  "name": "@bitpas/typist",
   "description": "Animated typing utility",
+  "version": "0.1.1",
+  "keywords": [
+    "animation",
+    "javascript",
+    "typing"
+  ],
+  "author": "Ryan Todd Garza <ryantoddgarza@gmail.com>",
+  "license": "GPL-2.0",
   "main": "dist/typist.min.js",
   "module": "dist/typist.es.min.js",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitpas/typist.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bitpas/typist/issues"
+  },
+  "homepage": "https://github.com/bitpas/typist#readme",
   "scripts": {
     "build": "npm run rollup",
+    "clean": "rm -rf lib/",
     "format": "npm run lint -- --fix",
     "lint": "eslint --ext .js .",
     "rollup": "rollup --config"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ryantoddgarza/typist.git"
-  },
-  "author": "Ryan Todd Garza <ryantoddgarza@gmail.com> (http://ryantoddgarza.com)",
-  "license": "GPL-2.0",
-  "bugs": {
-    "url": "https://github.com/ryantoddgarza/typist/issues"
-  },
-  "homepage": "https://github.com/ryantoddgarza/typist#readme",
   "devDependencies": {
     "eslint": "^7.18.0",
     "prettier": "^2.2.1",
