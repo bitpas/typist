@@ -5,8 +5,10 @@
   "main": "dist/typist.min.js",
   "module": "dist/typist.es.min.js",
   "scripts": {
-    "rollup": "rollup --config",
-    "build": "npm run rollup"
+    "build": "npm run rollup",
+    "format": "npm run lint -- --fix",
+    "lint": "eslint --ext .js .",
+    "rollup": "rollup --config"
   },
   "repository": {
     "type": "git",
