@@ -9,8 +9,8 @@
   ],
   "author": "Ryan Todd Garza <ryantoddgarza@gmail.com>",
   "license": "GPL-2.0",
-  "main": "dist/typist.min.js",
-  "module": "dist/typist.es.min.js",
+  "main": "lib/typist.min.js",
+  "module": "lib/typist.es.min.js",
   "files": [
     "lib"
   ],
