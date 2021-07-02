@@ -2,17 +2,37 @@
 
 Animated typing utility.
 
+## Installation
+
+Install `@bitpas/typist` with npm.
+
+```sh
+npm install @bitpas/typist
+```
+
 ## Usage
+
+### Import
+
+Import Typist as an ES module
+
+```js
+import Typist from '@bitpas/typist';
+```
+
+or require as CommonJS.
+
+```js
+const Typist = require('@bitpas/typist');
+```
 
 ### Initialize
 
 Declare a new instance of Typist.
 
-The Typist instance method takes two arguments: a required callback to which Typist's output is passed as the argument, and an optional object to configure the instance away from Typist defaults.
+The Typist instance method takes two arguments: a required callback to which Typist's output is passed as the argument, and an optional configuration object to override Typist's defaults.
 
 ```js
-import Typist from 'typist';
-
 const myCallback = (output) => console.log(output);
 const myOptions = { speed: 320 };
 const myTypist = new Typist(myCallback, myOptions);
@@ -20,11 +40,13 @@ const myTypist = new Typist(myCallback, myOptions);
 
 ### Run
 
-Call the new instance of Typist, specify the output content in the `type` method, and call the `start` method to begin the animation.
+On the initialized instance of Typist, pass the desired output as a string to the `type` method, and call the `start` method to begin the animation.
 
 ```js
 myTypist.type('My typed message.').start();
 ```
+
+## Combining methods
 
 ### Non-chainable methods
 
@@ -81,7 +103,7 @@ myTypist
 
 - Arguments
   - value `number` or `string`:
-    - `n`: Delete _n_ number of characters
+    - `n`: Delete _n_ characters
     - `'all'`: Delete output length
     - Default: `1`
 - Returns: Typist instance object
